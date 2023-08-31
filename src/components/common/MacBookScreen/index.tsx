@@ -40,7 +40,7 @@ function ShowOnScrollChange({ distance, children }: ShowOnScrollChangeProps) {
         };
 
         scrollY.on('change', updateOpacity);
-    }, [scrollY, utpRef]);
+    }, [scrollY, utpRef, distance, opacity]);
 
     return (
         <motion.div
@@ -72,7 +72,7 @@ function MoveOnScrollChange({ distance, children }: MoveOnScrollChangeProps) {
         };
 
         setTimeout(() => scrollY.on('change', updateHeight), 50);
-    }, [scrollY, utpRef]);
+    }, [scrollY, utpRef, distance]);
 
     return (
         <motion.div

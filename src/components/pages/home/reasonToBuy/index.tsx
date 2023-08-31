@@ -47,6 +47,7 @@ function ReasonToBuy() {
                 <div className="flex flex-wrap justify-center gap-10 my-[120px]">
                     {BUY_POINTS.map(({title, description, number}) => (
                         <ReasonToBuyCard
+                            key={number}
                             title={title}
                             number={number}
                             description={description}

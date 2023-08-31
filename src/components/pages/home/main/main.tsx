@@ -10,8 +10,7 @@ import MacBookScreen from "@/components/common/MacBookScreen";
 
 const Main = () => {
     const {scrollYProgress} = useScroll();
-    const {isMobile} = useResponsive();
-    const [isScrollStarted, setScrollStarted] = useState(false);
+    const [_, setScrollStarted] = useState(false);
 
     useEffect(() => {
         const unsubscribe = scrollYProgress.on('change', (val) =>
