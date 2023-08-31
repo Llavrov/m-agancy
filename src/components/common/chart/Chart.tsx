@@ -74,7 +74,7 @@ const LABELS: Array<string> = [];
 LABELS.length = 29;
 LABELS.fill("M-agancy");
 
-const CHART_DATASET = (color = "#9D5AFF", points = []) => ({
+const CHART_DATASET = (color = "#9D5AFF", points: number[]) => ({
     labels: LABELS,
     datasets: [
         {
@@ -95,12 +95,12 @@ const CHART_DATASET = (color = "#9D5AFF", points = []) => ({
     ],
 });
 
-export function ChartComponent({color, points}: { color?: string, points?: number[] }) {
+export function ChartComponent({color, points}: { color?: string, points: number[] }) {
     const [chartData, setChartData] = useState<any>({ datasets: [] });
     const [chartOptions, setChartOptions] = useState<any>({});
 
     useEffect(() => {
-        setChartData(CHART_DATASET(color, points ?? []));
+        setChartData(CHART_DATASET(color, points));
         setChartOptions(options);
     }, []);
 

@@ -27,9 +27,7 @@ export default function QUTextField({
             disabled={disabled}
             type={type}
             autoComplete={autocomplete}
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             InputProps={{
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
                 ...(params as any).InputProps,
                 startAdornment: startContent ? <InputAdornment position="start">{startContent}</InputAdornment> : undefined,
                 endAdornment: endContent ? <InputAdornment position="end">{endContent}</InputAdornment> : undefined,

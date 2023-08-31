@@ -9,7 +9,7 @@ function CardWithChart({ color = '#F6CC56', title = '', noChart, points }: { col
                 <p className="text-heading-ss-bold">{title}</p>
                 {!noChart && (
                     <div className="absolute z-10 w-[330px]">
-                        <ChartContainer color={color} points={points} />
+                        <ChartContainer color={color} points={points ?? []} />
                     </div>
                 )}
 
