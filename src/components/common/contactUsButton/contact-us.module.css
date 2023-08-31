@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    color: var(--active-font-color);
+    transition-duration: 0.5s;
+    gap: 12px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+    border-radius: 16px 0 0 16px;
+    color: var(--active-font-color);
+    transition-duration: 0.5s;
+    gap: 12px;
+}
+
+.wrapper:hover{
+    color: var(--default-font-color);
+}
+
+.arrow{
+    transition-duration: 0.5s;
+}
+

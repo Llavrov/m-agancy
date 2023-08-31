@@ -1,0 +1,31 @@
+#root {
+    margin: 100px auto;
+    max-width: 500px;
+    padding-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 10% 60%;
+    opacity: 1;
+
+    font-size: var(--extra-font-size);
+    font-weight: 800;
+    text-transform: uppercase;
+    transition-duration: 1s;
+    animation-duration: 1s;
+    white-space: nowrap;
+    line-height: 130px;
+}
+
+.card-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: -120px;
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100%;
+    padding: 30px 0 0 0;
+    background: var(--light-background);
+    overflow: hidden;
+    border-top: 1px solid #D9D9D9;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.contact {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.mark {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 20px 40px;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+.light {
+    display: inline-block;
+    color: #171717;
+    opacity: 0.6;
+    padding: 16px 20px;
+    border-radius: 40px;
+    border: 1px solid #171717;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dark {
+    background: rgba(103, 103, 103, 0.5);
+    color: white;
+    padding: 7px 13px;
+    border-radius: 20px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}

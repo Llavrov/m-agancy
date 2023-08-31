@@ -1,0 +1,27 @@
+.closeIcon {
+    background: white;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    transition: 2s background-color;
+    animation-delay: 2s;
+}
+
+.openIcon {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 2s;
+}
+
+@media (max-width: 1200px) {
+    .openIcon,
+    .closeIcon {
+        width: 42px;
+        height: 42px;
+    }
+}
