@@ -8,17 +8,18 @@ import Header from "@/components/header/header";
 export const Layout = ({children}: PropsWithChildren) =>
     <>
         <Head>
-            <title>M agency</title>
+            <title>(M)agency</title>
 
             <meta name="viewport" content="initial-scale=1, width=device-width" />
-            <meta name="title" content="M agency - Программируем будущее вашего успеха" />
+            <meta name="title" content="M agency - Масштабируем ваш бизнес, привлекаем новых клиентов и проводим маркетинговые исследования." />
             <meta
                 name="description"
-                content="Многопрофильная студия предоставляет широкий спектр услуг, начиная от создания технического задания и функциональных требований до разработки и продвижения продукта."
+                content="(M)agency - сайт маркетинговой студии, мы занимаемся продвижением в социальных сетях - настраиваем таргетированную рекламу, создаем и публикуем контент, проводим маркетинговые исследования."
             />
-            <meta name="keywords" content="Веб-дизайн, Разработка сайтов, UI/UX, Фронтенд-разработка" />
-
-            <link rel="icon" href="/logo.svg" />
+            <meta property="og:description" content="(M)agency - сайт маркетинговой студии, мы занимаемся продвижением в социальных сетях - настраиваем таргетированную рекламу, создаем и публикуем контент, проводим маркетинговые исследования." />
+            <meta name="keywords" content="Маркетинг, Разработка сайтов, UI/UX, SMM, продвижение в социальных сетях" />
+            <meta property="og:image" content="https://m-agancy.vercel.app/logo.svg" />
+            <link rel="icon" href="https://m-agancy.vercel.app/logo.svg" />
         </Head>
 
         <Header />
