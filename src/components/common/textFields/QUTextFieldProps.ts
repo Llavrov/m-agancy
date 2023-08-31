@@ -8,6 +8,7 @@ export interface QUTextFieldProps {
     disabled?: boolean;
     type: HTMLInputTypeAttribute;
     autocomplete?: string;
+    color?: string;
     startContent?: ReactElement;
     endContent?: ReactElement;
     style?: CSSProperties;

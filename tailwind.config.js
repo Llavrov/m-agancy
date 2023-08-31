@@ -76,6 +76,7 @@ const config = {
         'heading-l': ['32px', { fontWeight: '600' }],
         'heading-xl': ['38px', { fontWeight: '600' }],
         'heading-48': ['48px', { fontWeight: '600' }],
+        'heading-48-bold': ['48px', { fontWeight: '800' }],
         '48': ['48px', { fontWeight: '400', lineHeight: '52px' }],
         'heading-xxl': ['52px', { fontWeight: '600' }],
         'text-s': ['12px', { lineHeight: '15px' }],

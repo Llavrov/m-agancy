@@ -14,6 +14,7 @@ export default function QUTextField({
     startContent,
     endContent,
     style,
+    color = 'black',
     className,
     ...params
 }: QUTextFieldProps): ReactElement {
@@ -35,16 +36,24 @@ export default function QUTextField({
                 sx: {
                     '&.Mui-focused': {
                         '.MuiOutlinedInput-notchedOutline': {
-                            border: '2px solid black',
+                            border: `2px solid ${color}`,
                             borderRadius: '12px',
-                            borderColor: 'black',
+                            borderColor: color,
+                        },
+                    },
+                    '&:hover': {
+                        '.MuiOutlinedInput-notchedOutline': {
+                            border: `2px solid ${color}`,
+                            borderRadius: '12px',
+                            borderColor: color,
                         },
                     },
                     '.MuiOutlinedInput-notchedOutline': {
-                        border: '2px solid black',
+                        border: `2px solid ${color}`,
                         borderRadius: '12px',
-                        borderColor: 'black',
+                        borderColor: color,
                     },
+                    color,
                     borderRadius: '12px',
                     background: 'transparent',
                 },

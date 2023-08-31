@@ -1,5 +1,6 @@
 export enum Icon {
     logo = '/logo.svg',
+    logoWhite = '/logo-white.svg',
     arrow = '/icons/arrow.svg',
     star = '/icons/star.svg',
     mmm = '/icons/m.svg',
